@@ -1,0 +1,299 @@
+
+
+
+/* Global Styles */
+
+ *{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+}
+
+/* navbar style */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-left: 50px;
+    margin: 0;
+    background-color: #0bc3a4;
+    
+}
+
+.logo img {
+    height: 50px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    padding-right: 50px;
+    margin: 0;
+    list-style: none;
+}
+
+.menu li {
+    padding-left: 20px;
+}
+
+.menu li a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+
+}
+
+.menu li a:hover {
+        color: green;
+}
+
+
+
+
+/* input box style...  */
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+input[type="text"],input[type="email"] , textarea  {
+    width: 30%;
+    padding: 10px;
+    padding-bottom: 5px;
+    margin-top: 15px;
+    background-color: #bec1b657;
+    border: none;
+    border-radius: 21px;
+    color: #2879ff;
+    font-size: 20px;
+}
+
+.btn {
+  
+    padding-bottom: 5px;
+    margin-top: 15px;
+    margin-left: 10px;
+    border: 3px solid #6e6e6e;
+    padding: 15px;
+    border-radius: 21px;
+    text-decoration: none;
+    color: #6e6e6e;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn:hover {
+   
+    background-color: #0b9ccd;
+}
+
+
+/* Hero Section Styles */
+.overlay {
+    background-color: black;
+    z-index: 999;
+}
+
+.hero {
+background-image: url('../image/backimg.jpg');
+background-size: cover;
+background-position: center;
+height: 500px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+color: #fff;
+}
+
+.hero h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+    color: #cbc91d;
+    
+    letter-spacing: 5px;
+    word-spacing: 12px;
+    font-family: emoji;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #16b38d;
+}
+
+/* Featured Items Styles */
+.featured {
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+padding: 50px;
+background-color: #f1f1f1;
+}
+
+.item {
+width: 300px;
+margin: 20px;
+background-color: #fff;
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+padding: 20px;
+text-align: center;
+}
+
+.item img {
+width: 100%;
+height: 200px;
+object-fit: cover;
+margin-bottom: 20px;
+}
+
+.item h3 {
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+.item p {
+font-size: 16px;
+margin-bottom: 20px;
+}
+
+/* About Section Styles */
+.about {
+padding: 50px;
+text-align: center;
+}
+
+.about h2 {
+font-size: 36px;
+margin-bottom: 30px;
+}
+
+.about p {
+font-size: 18px;
+line-height: 1.5;
+margin-bottom: 30px;
+}
+
+/* Contact Section Styles */
+.contact {
+padding: 50px;
+text-align: center;
+}
+
+.contact h2 {
+font-size: 36px;
+margin-bottom: 30px;
+}
+
+.contact form {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.contact label {
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+.contact input,
+.contact textarea {
+padding: 10px;
+margin-bottom: 20px;
+border: none;
+border-radius: 5px;
+width: 100%;
+max-width: 500px;
+}
+
+.contact button {
+background-color: #333;
+color: #fff;
+border: none;
+border-radius: 5px;
+padding: 10px 20px;
+cursor: pointer;
+font-size: 18px;
+}
+
+.contact button:hover {
+background-color: #555;
+}
+
+/* Footer Styles */
+footer {
+background-color: #333;
+color: #fff;
+padding: 10px;
+text-align: end;
+}
+
+
+
+/* All button style with animation */
+
+.btn {
+    border: none;
+    padding: 15px;
+    border-radius: 21px;
+    text-decoration: none;
+    color: #6e6e6e;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+    /* Default button styles */
+#color-slide {
+        position: relative;
+        display: inline-block;
+        padding: 12px 24px;
+        font-size: 18px;
+        color: #fff;
+       
+        background-color: aqua;
+        
+        overflow: hidden;
+      }
+      
+#color-slide:after {
+        content: 'Order Now';
+        padding-top:13px;
+        font-size:20px;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        
+        background-color: #008CBA;
+        transition: all 0.5s ease-in-out;
+      }
+      
+#color-slide:hover:after {
+        left: 0;
+      }
+      
+
+
+/* zooming effect of image ,,,, */
+
+
+
+  .zoom-image {
+    transition: transform .5s ease;
+  }
+  
+  .zoom-image:hover {
+    transform: scale(1.1); /* Increase to desired zoom level */
+  }
+  
+  
